@@ -58,6 +58,7 @@ function PreviewCarousel({ isModalWindow = false, openModal }: Props) {
               isModalWindow ? "" : "lg:hidden"
             } absolute w-10 h-10 pr-[2px] flex items-center justify-center top-1/2 left-4 lg:left-[-1.25rem] transform -translate-y-1/2 bg-white rounded-full`}
             onClick={handlePrevious}
+            aria-label="swipe left"
           >
             <img
               className="w-[10px] h-[14px]"
@@ -70,6 +71,7 @@ function PreviewCarousel({ isModalWindow = false, openModal }: Props) {
               isModalWindow ? "" : "lg:hidden"
             } absolute w-10 h-10 pl-[2px] flex items-center justify-center top-1/2 right-4 lg:right-[-1.25rem] transform -translate-y-1/2 bg-white rounded-full`}
             onClick={handleNext}
+            aria-label="swipe right"
           >
             <img
               className="w-[10px] h-[14px]"
@@ -91,6 +93,7 @@ function PreviewCarousel({ isModalWindow = false, openModal }: Props) {
             className={`group ${
               currentIndex === index ? "" : "hover:opacity-100"
             }`}
+            aria-label="Click on image to change the big one"
           >
             <div
               className={`w-[85px] h-[85px] overflow-hidden rounded-md ${

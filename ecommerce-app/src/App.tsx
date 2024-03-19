@@ -52,6 +52,7 @@ function App() {
               <button
                 className="ml-auto mb-4"
                 onClick={() => setIsModalOpen(false)}
+                aria-label="Close fullscreen preview of product"
               >
                 <img
                   className="w-5"

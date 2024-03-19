@@ -54,6 +54,7 @@ function Main({ amount, increaseAmount, decreaseAmount }: Props) {
           <button
             className="h-[24px] hover:opacity-75"
             onClick={decreaseAmount}
+            aria-label="decrease amount of things that will be added in the cart"
           >
             <svg
               width="12"
@@ -69,14 +70,12 @@ function Main({ amount, increaseAmount, decreaseAmount }: Props) {
               </defs>
               <use fill="#FF7E1B" fill-rule="nonzero" xlinkHref="#a" />
             </svg>
-            <span className="sr-only">
-              decrease amount of things that will be added in the cart
-            </span>
           </button>
           <span className="font-bold">{amount}</span>
           <button
             className="h-[24px] hover:opacity-75"
             onClick={increaseAmount}
+            aria-label="increase amount of things that will be added in the cart"
           >
             <svg
               width="12"
@@ -92,14 +91,12 @@ function Main({ amount, increaseAmount, decreaseAmount }: Props) {
               </defs>
               <use fill="#FF7E1B" fill-rule="nonzero" xlinkHref="#b" />
             </svg>
-            <span className="sr-only">
-              increase amount of things that will be added in the cart
-            </span>
           </button>
         </div>
         <button
           onClick={updateCart}
           className="hover:opacity-75 w-full shadow-xl shadow-[var(--pale-orange)] flex gap-3 justify-center bg-[var(--orange)] py-4 overflow-hidden rounded-lg"
+          aria-label="Put a set amount of product to cart"
         >
           <svg
             className="transform scale-90"

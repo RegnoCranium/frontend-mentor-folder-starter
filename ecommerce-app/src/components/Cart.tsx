@@ -37,12 +37,16 @@ function Cart({ isCartOpen }: Props) {
             <button
               onClick={() => setCartProduct({ ...cartProduct, amount: 0 })}
               className="ml-7"
+              aria-label={`Delete the product - ${name}`}
             >
               <img src="images/icon-delete.svg" alt="" />
             </button>
           </div>
           <div className="px-5 mt-5">
-            <button className="text-white hover:opacity-75 font-bold w-full shadow-lg shadow-[var(--pale-orange)] flex gap-3 justify-center bg-[var(--orange)] py-4 overflow-hidden rounded-lg">
+            <button
+              aria-label="Checkout"
+              className="text-white hover:opacity-75 font-bold w-full shadow-lg shadow-[var(--pale-orange)] flex gap-3 justify-center bg-[var(--orange)] py-4 overflow-hidden rounded-lg"
+            >
               Checkout
             </button>
           </div>

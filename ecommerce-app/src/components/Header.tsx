@@ -17,7 +17,11 @@ function Header() {
     <>
       <header className="flex h-5 px-7 my-5 justify-between relative lg:px-0 lg:my-10">
         <div className="flex items-center gap-4">
-          <button className="lg:hidden" onClick={() => setIsMenuOpen(true)}>
+          <button
+            className="lg:hidden"
+            onClick={() => setIsMenuOpen(true)}
+            aria-label="Open menu"
+          >
             <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
@@ -26,7 +30,7 @@ function Header() {
               />
             </svg>
           </button>
-          <a href="#">
+          <a href="#" aria-label="Company">
             <svg
               className="lg:mr-9"
               width="138"
@@ -48,6 +52,7 @@ function Header() {
             <button
               className="mb-10 lg:hidden"
               onClick={() => setIsMenuOpen(false)}
+              aria-label="Close menu"
             >
               <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -59,23 +64,33 @@ function Header() {
             </button>
             <ul className="flex flex-col gap-3 font-bold text-[var(--black-75)] lg:flex-row lg:gap-8 lg:font-normal">
               <li className="relative group">
-                <a href="#">Collections</a>
+                <a href="#" aria-label="Collections">
+                  Collections
+                </a>
                 <div className="animate-underline hidden pointer-events-none lg:group-hover:block absolute h-1 w-full bg-[var(--orange)] left-0"></div>
               </li>
               <li className="relative group">
-                <a href="#">Men</a>
+                <a href="#" aria-label="Men">
+                  Men
+                </a>
                 <div className="animate-underline hidden pointer-events-none lg:group-hover:block absolute h-1 w-full bg-[var(--orange)] left-0"></div>
               </li>
               <li className="relative group">
-                <a href="#">Women</a>
+                <a href="#" aria-label="Women">
+                  Women
+                </a>
                 <div className="animate-underline hidden pointer-events-none lg:group-hover:block absolute h-1 w-full bg-[var(--orange)] left-0"></div>
               </li>
               <li className="relative group">
-                <a href="#">About</a>
+                <a href="#" aria-label="About">
+                  About
+                </a>
                 <div className="animate-underline hidden pointer-events-none lg:group-hover:block absolute h-1 w-full bg-[var(--orange)] left-0"></div>
               </li>
               <li className="relative group">
-                <a href="#">Contact</a>
+                <a href="#" aria-label="Contact">
+                  Contact
+                </a>
                 <div className="animate-underline hidden pointer-events-none lg:group-hover:block absolute h-1 w-full bg-[var(--orange)] left-0"></div>
               </li>
             </ul>
@@ -85,6 +100,7 @@ function Header() {
           <button
             className="relative fill-[#69707D] hover:fill-[var(--black-75)]"
             onClick={() => setIsCartOpen((prev) => !prev)}
+            aria-label="Open or close a cart"
           >
             <div
               className={`absolute text-[8px] top-[-25%] left-[30%] font-bold text-white px-2 bg-[var(--orange)] overflow-hidden rounded-lg ${
@@ -103,6 +119,7 @@ function Header() {
           <a
             className="lg:ml-5 overflow-hidden rounded-full border-2 border-transparent hover:border-[var(--orange)]"
             href="#"
+            aria-label="Avatar"
           >
             <img
               className="h-6 lg:h-11"
