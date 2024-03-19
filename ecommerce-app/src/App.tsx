@@ -55,7 +55,7 @@ function App() {
               >
                 <img
                   className="w-5"
-                  src="src/images/icon-close-white.svg"
+                  src="images/icon-close-white.svg"
                   alt="close fullscreen window"
                 />
               </button>

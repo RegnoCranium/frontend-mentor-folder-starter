@@ -61,7 +61,7 @@ function PreviewCarousel({ isModalWindow = false, openModal }: Props) {
           >
             <img
               className="w-[10px] h-[14px]"
-              src="src/images/icon-previous.svg"
+              src="images/icon-previous.svg"
               alt="previous button"
             />
           </button>
@@ -73,7 +73,7 @@ function PreviewCarousel({ isModalWindow = false, openModal }: Props) {
           >
             <img
               className="w-[10px] h-[14px]"
-              src="src/images/icon-next.svg"
+              src="images/icon-next.svg"
               alt="next button"
             />
           </button>

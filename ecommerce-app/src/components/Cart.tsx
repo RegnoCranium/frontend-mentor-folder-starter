@@ -38,7 +38,7 @@ function Cart({ isCartOpen }: Props) {
               onClick={() => setCartProduct({ ...cartProduct, amount: 0 })}
               className="ml-7"
             >
-              <img src="src/images/icon-delete.svg" alt="" />
+              <img src="images/icon-delete.svg" alt="" />
             </button>
           </div>
           <div className="px-5 mt-5">

@@ -106,7 +106,7 @@ function Header() {
           >
             <img
               className="h-6 lg:h-11"
-              src="src/images/image-avatar.png"
+              src="images/image-avatar.png"
               alt="avatar"
             />
           </a>

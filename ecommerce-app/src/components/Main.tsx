@@ -10,7 +10,7 @@ type Props = {
 const product = {
   name: "Fall Limited Edition Sneakers",
   price: 125,
-  previewImage: "src/images/image-product-1-thumbnail.jpg",
+  previewImage: "images/image-product-1-thumbnail.jpg",
 };
 
 function Main({ amount, increaseAmount, decreaseAmount }: Props) {
