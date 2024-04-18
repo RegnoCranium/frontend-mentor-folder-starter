@@ -6,7 +6,7 @@ export type User = {
 export type CommentData = {
   id: number;
   content: string;
-  createdAt: string;
+  createdAt: number;
   score: number;
   user: User;
   replies: Reply[] | [];

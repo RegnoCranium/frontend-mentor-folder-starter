@@ -130,8 +130,8 @@ function App() {
     text = text.trim();
     if (!text.length || text === "Add a comment...") return;
     const content = text;
-    const id = Date.now();
-    const createdAt = "Now";
+    const id = Math.floor(100000 + Math.random() * 900000);
+    const createdAt = Date.now();
     const user = dataCurrentUser;
     const score = 0;
     const replies = [] as Reply[];
@@ -150,8 +150,8 @@ function App() {
     text = text.trim();
     if (!text.length) return;
     const score = 0;
-    const createdAt = "Now";
-    const id = Date.now();
+    const createdAt = Date.now();
+    const id = Math.floor(100000 + Math.random() * 900000);
     const user = dataCurrentUser;
     const content = text;
     const newComments = dataComments.map((comment) => {

@@ -3,6 +3,14 @@ import { CommentData, HandleNewReply, Reply } from "../types/types";
 import WriteCommentField from "./WriteCommentField";
 import Score from "./Score";
 import ReplyOrEdit from "./ReplyOrEdit";
+import {
+  differenceInMinutes,
+  differenceInHours,
+  differenceInDays,
+  differenceInWeeks,
+  differenceInMonths,
+  differenceInYears,
+} from "date-fns";
 
 type Props = {
   commentData: CommentData | Reply;
@@ -33,6 +41,34 @@ export default function Comment({
     setIsEditable(false);
     updateComment(commentData.id, textContent);
     setTextContent(commentData.content);
+  };
+
+  const formatDate = (timestamp: number) => {
+    const diffInMinutes = differenceInMinutes(Date.now(), timestamp);
+    const diffInHours = differenceInHours(Date.now(), timestamp);
+    const diffInDays = differenceInDays(Date.now(), timestamp);
+    const diffInWeeks = differenceInWeeks(Date.now(), timestamp);
+    const diffInMonths = differenceInMonths(Date.now(), timestamp);
+    const diffInYears = differenceInYears(Date.now(), timestamp);
+
+    switch (true) {
+      case diffInMinutes < 1:
+        return "Now";
+      case diffInMinutes < 60:
+        return `${diffInMinutes} minute${diffInMinutes > 1 ? "s" : ""} ago`;
+      case diffInHours < 24:
+        return `${diffInHours} hour${diffInHours > 1 ? "s" : ""} ago`;
+      case diffInDays < 7:
+        return `${diffInDays} day${diffInDays > 1 ? "s" : ""} ago`;
+      case diffInWeeks < 4:
+        return `${diffInWeeks} week${diffInWeeks > 1 ? "s" : ""} ago`;
+      case diffInMonths < 12:
+        return `${diffInMonths} month${diffInMonths > 1 ? "s" : ""} ago`;
+      case diffInYears >= 1:
+        return `${diffInYears} year${diffInYears > 1 ? "s" : ""} ago`;
+      default:
+        throw new Error("Incorrect date format");
+    }
   };
 
   return (
@@ -66,7 +102,9 @@ export default function Comment({
                 </span>
               )}
             </span>
-            <span className="text-grayish-blue">{commentData.createdAt}</span>
+            <span className="text-grayish-blue">
+              {formatDate(commentData.createdAt)}
+            </span>
             <span className="hidden sm:block ml-auto">
               <ReplyOrEdit
                 isCurrentUser={isCurrentUser}
