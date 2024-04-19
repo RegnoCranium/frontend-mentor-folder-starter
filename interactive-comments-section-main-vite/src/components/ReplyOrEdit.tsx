@@ -20,7 +20,7 @@ export default function ReplyOrEdit({
       {isCurrentUser ? (
         isEditable ? (
           <button
-            className="h-9 w-24 bg-moderate-blue text-white rounded-md uppercase"
+            className="h-9 w-24 bg-moderate-blue text-white rounded-md uppercase hover:opacity-60 transition-opacity duration-300"
             onClick={endUpdateSequence}
           >
             Update
@@ -29,14 +29,14 @@ export default function ReplyOrEdit({
           <>
             <button
               onClick={startDeleteSequence}
-              className="flex items-center h-full gap-2 text-soft-red"
+              className="flex items-center h-full gap-2 text-soft-red hover:opacity-60 transition-opacity duration-300"
             >
               <img src="/icon-delete.svg" alt="Delete" />
               Delete
             </button>
             <button
               onClick={openEditMenu}
-              className="ml-4 flex items-center h-full gap-2 text-moderate-blue"
+              className="ml-4 flex items-center h-full gap-2 text-moderate-blue hover:opacity-60 transition-opacity duration-300"
             >
               <img src="/icon-edit.svg" alt="Edit" />
               Edit
@@ -46,7 +46,7 @@ export default function ReplyOrEdit({
       ) : (
         <button
           onClick={toggleReplyField}
-          className="flex items-center gap-2 h-full"
+          className="flex items-center gap-2 h-full hover:opacity-60 transition-opacity duration-300"
         >
           <img className="shrink-0" src="/icon-reply.svg" alt="Reply-icon" />
           <span className="text-moderate-blue">Reply</span>

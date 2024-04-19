@@ -87,21 +87,21 @@ export default function WriteCommentField({
         isReplyField ? "mb-4" : ""
       }`}
     >
-      <div className="hidden sm:block">
+      <div className="hidden sm:block sm:mt-1">
         <img className="w-9" src={pfp} alt="Profile picture" />
       </div>
       <div
         contentEditable
         ref={inputField}
         suppressContentEditableWarning={true}
-        className="min-h-24 sm:w-3/4 border break-words border-light-gray px-5 py-3 rounded-md text-grayish-blue outline-none"
+        className="min-h-24 sm:w-3/4 border break-words border-light-gray px-5 py-3 rounded-md text-grayish-blue outline-none transition-colors duration-200 focus:border-moderate-blue focus:text-black"
       >
         {isReplyField ? "" : "Add a comment..."}
       </div>
       <div className="hidden sm:block">
         <button
           onClick={() => ReplyOrSendFunc()}
-          className="uppercase h-12 bg-moderate-blue w-24 font-medium text-white rounded-md"
+          className="uppercase h-12 bg-moderate-blue w-24 font-medium text-white rounded-md hover:opacity-60 transition-opacity duration-300"
         >
           {isReplyField ? "Reply" : "Send"}
         </button>

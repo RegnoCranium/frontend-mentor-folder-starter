@@ -17,13 +17,13 @@ export default function ModalDelete({ closeModal, deleteComment }: Props) {
         <div className="flex justify-between h-12 font-medium">
           <button
             onClick={closeModal}
-            className="basis-[48%] bg-grayish-blue text-white h-full rounded-md uppercase"
+            className="basis-[48%] bg-grayish-blue text-white h-full rounded-md uppercase hover:opacity-60 transition-opacity duration-300"
           >
             No, cancel
           </button>
           <button
             onClick={deleteComment}
-            className="basis-[48%] bg-soft-red text-white h-full rounded-md uppercase"
+            className="basis-[48%] bg-soft-red text-white h-full rounded-md uppercase hover:opacity-60 transition-opacity duration-300"
           >
             Yes, delete
           </button>
