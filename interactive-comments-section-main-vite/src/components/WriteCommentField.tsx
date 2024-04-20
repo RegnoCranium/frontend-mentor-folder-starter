@@ -110,7 +110,7 @@ export default function WriteCommentField({
         <img className="w-8" src={pfp} alt="Profile picture" />
         <button
           onClick={() => ReplyOrSendFunc()}
-          className="uppercase h-12 bg-moderate-blue w-24 font-medium text-white rounded-md"
+          className="uppercase h-12 bg-moderate-blue w-24 font-medium text-white rounded-md hover:opacity-60 transition-opacity duration-300"
         >
           {isReplyField ? "Reply" : "Send"}
         </button>
