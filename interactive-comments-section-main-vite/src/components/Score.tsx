@@ -18,6 +18,7 @@ export default function Score({ increaseScore, decreaseScore, score }: Props) {
             fill="#C5C6EF"
           />
         </svg>
+        <span className="sr-only">Upvote</span>
       </button>
       <span className="w-5 flex justify-center items-center text-moderate-blue font-medium">
         {score}
@@ -33,6 +34,7 @@ export default function Score({ increaseScore, decreaseScore, score }: Props) {
             fill="#C5C6EF"
           />
         </svg>
+        <span className="sr-only">Downvote</span>
       </button>
     </span>
   );
