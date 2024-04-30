@@ -28,8 +28,6 @@ Users should be able to:
 ![Mobile design](./Screenshot_3.png)
 ![Mobile design active states](./Screenshot_4.png)
 
-### Links
-
 ## My process
 
 ### Built with
