@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <h1>Desserts</h1>
+      <main>
+        <div id="food-items"></div>
+        <div class="cart-container">
+          <div class="cart-header">
+            Your Cart (<span id="cart-amount">0</span>)
+          </div>
+          <div id="cart"></div>
+          <div class="total-container" style="display: none">
+            <div class="total-info">
+              <div class="total-text">Order Total</div>
+              <div class="total"></div>
+            </div>
+            <div class="carbon-neutral-container">
+              <img
+                src="./assets/images/icon-carbon-neutral.svg"
+                alt="Carbon-neutral icon"
+              />
+              <div>
+                This is a
+                <span class="carbon-neutral"> carbon-neutral </span> delivery
+              </div>
+            </div>
+            <button class="confirm-order-btn">Confirm Order</button>
+          </div>
+          <div class="cart-empty">
+            <img
+              src="./assets/images/illustration-empty-cart.svg"
+              alt="Empty cart icon"
+            />
+            Your added items will appear here
+          </div>
+        </div>
+      </main>
+      <div class="confirmed-msg-bg" style="display: none">
+        <div class="confirmed-msg">
+          <div class="confirmed-max-w">
+            <img
+              src="./assets/images/icon-order-confirmed.svg"
+              alt="Order confirmed icon"
+            />
+            <h1>Order Confirmed</h1>
+            <span>We hope you enjoy your food!</span>
+            <div class="confirmed-food-items"></div>
+            <div class="total-info">
+              <div class="total-text">Order Total</div>
+              <div class="confirmed-total">0</div>
+            </div>
+            <button class="close-confirmed">Start New Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/RegnoCranium">RegnoCranium</a>.
+    </div>
+  </body>
+</html>
