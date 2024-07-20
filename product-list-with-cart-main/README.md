@@ -26,10 +26,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./screenshots/Screenshot_1.png)
-![Desktop Cart](./screenshots/Screenshot_2.png)
-![Mobile](./screenshots/Screenshot_3.png)
-![Mobile Cart](./screenshots/Screenshot_4.png)
+![Desktop](./Screenshot_1.png)
+![Desktop Cart](./Screenshot_2.png)
+![Mobile](./Screenshot_3.png)
+![Mobile Cart](./Screenshot_4.png)
 
 ### Links
 
