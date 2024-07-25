@@ -26,15 +26,15 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./screenshots/Screenshot_1.png)
-![Desktop Cart](./screenshots/Screenshot_2.png)
-![Mobile](./screenshots/Screenshot_3.png)
-![Mobile Cart](./screenshots/Screenshot_4.png)
+![Desktop](./Screenshot_1.png)
+![Desktop Cart](./Screenshot_2.png)
+![Mobile](./Screenshot_3.png)
+![Mobile Cart](./Screenshot_4.png)
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: [https://github.com/RegnoCranium/frontend-mentor-folder-starter/tree/main/product-list-with-cart-main](https://github.com/RegnoCranium/frontend-mentor-folder-starter/tree/main/product-list-with-cart-main)
+- Live Site URL: [https://frontend-mentor-folder-starter.vercel.app](https://frontend-mentor-folder-starter.vercel.app)
 
 ## My process
 
