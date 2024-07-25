@@ -26,9 +26,9 @@ fetch("data.json")
               </button>
             </div>
             <div class="change-amount-container" style="display: none;">
-              <button class="decrease-btn" data-id="${itemId}"><img src="./assets/images/icon-decrement-quantity.svg" alt="Decrement icon"/></button>
+              <button class="decrease-btn" data-id="${itemId}"><img src="./assets/images/icon-decrement-quantity.svg" alt="Decrement icon"/><div class="sr-only">Subtract 1 from the quantity</div></button>
               <div class="amount" data-id="${itemId}">1</div>
-              <button class="increase-btn" data-id="${itemId}"><img src="./assets/images/icon-increment-quantity.svg" alt="Increment icon"/></button>
+              <button class="increase-btn" data-id="${itemId}"><img src="./assets/images/icon-increment-quantity.svg" alt="Increment icon"/><div class="sr-only">Add 1 to the quantity</div></button>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ fetch("data.json")
 
         const deleteBtn = document.createElement("button");
         deleteBtn.innerHTML =
-          '<img src="./assets/images/icon-remove-item.svg" alt="Remove icon" />';
+          '<img src="./assets/images/icon-remove-item.svg" alt="Remove icon" /><div class="sr-only">Delete the food</div>';
         deleteBtn.addEventListener("click", () => {
           delete cart[id];
           updateCartDisplay();
