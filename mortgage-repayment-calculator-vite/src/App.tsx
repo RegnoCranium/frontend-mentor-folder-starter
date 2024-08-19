@@ -106,14 +106,14 @@ function App() {
                 Mortgage Amount
               </label>
               <div
-                className={`flex mt-2 w-full h-12 border border-[#4e6e7e] overflow-hidden rounded-md ${
+                className={`flex mt-2 w-full h-12 border border-[#4e6e7e] overflow-hidden rounded-md group ${
                   amount === "" && errorsVisible && "!border-red-500"
-                }`}
+                } focus-within:border-[#d7da2f]`}
               >
                 <div
                   className={`px-4 h-full shrink-0 bg-blue-100 text-[#4e6e7e] text-xl flex items-center font-semibold justify-center ${
-                    amount === "" && errorsVisible && "bg-red-500 text-white"
-                  }`}
+                    amount === "" && errorsVisible && "!bg-red-500 text-white"
+                  } group-focus-within:bg-[#d7da2f]`}
                 >
                   £
                 </div>
@@ -136,9 +136,9 @@ function App() {
                   Mortgage Term
                 </label>
                 <div
-                  className={`flex mt-2 w-full h-12 border border-[#4e6e7e] overflow-hidden rounded-md ${
+                  className={`group flex mt-2 w-full h-12 border border-[#4e6e7e] overflow-hidden rounded-md ${
                     term === "" && errorsVisible && "!border-red-500"
-                  }`}
+                  } focus-within:border-[#d7da2f]`}
                 >
                   <input
                     className="w-full h-full p-3 pl-4 text-lg font-semibold"
@@ -149,8 +149,8 @@ function App() {
                     onChange={handleTermChange}
                   />
                   <div
-                    className={`px-4 h-full shrink-0 bg-blue-100 text-[#4e6e7e] flex text-lg font-semibold items-center justify-center ${
-                      term === "" && errorsVisible && "bg-red-500 text-white"
+                    className={`px-4 h-full shrink-0 bg-blue-100 text-[#4e6e7e] flex text-lg font-semibold items-center justify-center group-focus-within:bg-[#d7da2f] ${
+                      term === "" && errorsVisible && "!bg-red-500 text-white"
                     }`}
                   >
                     years
@@ -165,9 +165,9 @@ function App() {
                   Interest Rate
                 </label>
                 <div
-                  className={`flex mt-2 w-full h-12 border border-[#4e6e7e] overflow-hidden rounded-md ${
+                  className={`group flex mt-2 w-full h-12 border border-[#4e6e7e] overflow-hidden rounded-md ${
                     rate === "" && errorsVisible && "!border-red-500"
-                  }`}
+                  } focus-within:border-[#d7da2f]`}
                 >
                   <input
                     className="w-full h-full p-3 pl-4 text-lg font-semibold"
@@ -178,8 +178,8 @@ function App() {
                     onChange={handleRateChange}
                   />
                   <div
-                    className={`px-4 h-full shrink-0 bg-blue-100 text-[#4e6e7e] flex text-lg font-semibold items-center justify-center ${
-                      rate === "" && errorsVisible && "bg-red-500 text-white"
+                    className={`px-4 h-full shrink-0 bg-blue-100 text-[#4e6e7e] flex text-lg font-semibold items-center justify-center group-focus-within:bg-[#d7da2f] ${
+                      rate === "" && errorsVisible && "!bg-red-500 text-white"
                     }`}
                   >
                     %
