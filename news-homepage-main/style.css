@@ -193,6 +193,7 @@ ul {
   padding: 20px;
   padding-top: 30px;
   font-size: 1.2rem;
+  z-index: 5;
 }
 
 ul li {
@@ -221,15 +222,19 @@ body.stop {
 
 .gray {
   position: absolute;
+  pointer-events: all;
+  z-index: 1;
   top: 0;
   height: 100%;
-  width: 30%;
+  width: 100%;
   background-color: black;
+  transition: all 500ms ease-in;
   opacity: 0.5;
 }
 
 .hidden {
-  display: none;
+  pointer-events: none;
+  opacity: 0;
 }
 
 @media only screen and (min-width: 1200px) {

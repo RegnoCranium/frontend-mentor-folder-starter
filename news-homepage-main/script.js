@@ -8,10 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   btnOpen.addEventListener("click", function () {
     menu.classList.toggle("shown");
     body.classList.toggle("stop");
-
-    setTimeout(function () {
-      gray.classList.toggle("hidden");
-    }, 475);
+    gray.classList.toggle("hidden");
   });
 
   btnClose.addEventListener("click", function () {
