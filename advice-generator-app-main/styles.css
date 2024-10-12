@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  width: 480px;
+  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 0.25rem;
+}
+
+p {
+  color: hsl(193, 38%, 86%);
+}
+
+.dividers img {
+  width: 100%;
+}
+
+button {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -30px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(150, 100%, 72%);
+  box-shadow: 0 0 35px hsl(150, 100%, 66%);
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  body {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 0.8rem;
+  }
+
+  main {
+    width: 95%;
+  }
+}
